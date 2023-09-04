@@ -26,7 +26,7 @@ jobs:
       PYTHON_VERSION: '3.7'
       MNE_IGNORE_WARNINGS_IN_TESTS: 'true'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: ./tools/setup_xvfb.sh
         name: 'Setup xvfb'
       - uses: conda-incubator/setup-miniconda@v2
