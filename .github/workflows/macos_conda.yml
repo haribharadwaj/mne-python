@@ -26,7 +26,7 @@ jobs:
       CI_OS_NAME: 'osx'
     steps:
       - uses: actions/checkout@v3
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v3
         with:
           activate-environment: 'mne'
           python-version: ${{ env.PYTHON_VERSION }}

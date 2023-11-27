@@ -35,7 +35,7 @@ jobs:
           fetch-depth: 0
       - run: ./tools/setup_xvfb.sh
         name: 'Setup xvfb'
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v3
         with:
           python-version: ${{ env.PYTHON_VERSION }}
         name: 'Setup conda'
